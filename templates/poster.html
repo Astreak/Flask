@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+{% block content %}
+<body bgcolor="azure">
+	<center>
+	<div style="position: relative;top:200px;">
+	<form action="" method="post">
+
+	<p style="font-family:Oswald,Roboto">{{P.hidden_tag()}}
+		<h1>{{P.Text.label()}}</h1>
+		
+		{{P.Text(size=600,placeholder='Write')}}
+		
+	</p>
+	<p>{{P.submit()}}</p>
+	</form>
+</div>
+</center>
+
+{% endblock %}
+
+

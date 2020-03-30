@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+{% block content %}
+<body bgcolor="azure">
+	<div style="position: relative;top:300px;">
+		<center>
+	<form action="" method="post">
+	<p>	{{A.hidden_tag()}}
+		{{A.name.label()}}
+		{{A.name(size=90,placeholder=Name)}}
+	</p>
+	<p>{{A.submit()}}</p>
+	</form>
+</center>
+</div>
+	
+{% endblock %}
+</body>
+</html>

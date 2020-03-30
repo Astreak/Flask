@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New Page</title>
+</head>
+{% if mode == True %}
+<body bgcolor="black" style="color:red;font-size: 17px;">
+{% else %}
+<body bgcolor="Lightblue">
+{% endif %}
+<center>
+	<h1> Enter YOur Details</h1>
+	<h3>make sure Your registered first</h3>h3>
+	<form action="" method="POST">
+		Address<input type="text" placeholder="Address" name="add">
+		HouseName<input type="text" name="house" placeholder="Housename">
+		city<input type="text" name="city" placeholder="CTY">
+		Uni<input type="text" name="university" placeholder="university">
+		username<input type="text" name="username" placeholder="name">
+		<button type="submit"> Submit</button>
+	</form>
+</center>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+{% block content %}
+{% if mode == True %}
+<body bgcolor="black" style="color:red;font-size: 17px;">
+{% else %}
+<body bgcolor="Lightblue">
+{% endif %}
+
+<center>
+	{% if n!=None %}
+	<h1 style="position: relative;top:360px;">WELCOME TO <span style="color:azure;font-style: italic;font-size23px;">POLARoID </h1>
+	<h2 style="position: relative;top:360px;">Blog chat with your friends</h2>
+	<h2 style="position: relative;top:360px;">Welcome Mr. {{us}}</h2>
+	<ul style="position: relative;top:360px;">
+		
+	</ul>
+	{% else %}
+	<h1 style="position: relative;top:360px;"> {{n}}</h1>
+	{% endif %}
+</center>
+</body>
+
+{% endblock %}

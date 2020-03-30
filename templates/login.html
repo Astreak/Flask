@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% block content %}
+{% if mode == True %}
+<body bgcolor="black" style="color:red;">
+{% else %}
+<body bgcolor="Darkslategrey" style="color:'Darkslategrey';">
+{% endif %}
+<center>
+	<div style="font-family: Roboto;position: relative;top:200px;">
+	<h1> Login TO YOUR ACCOUNT</h1><br><br><hr>
+	<form action="" method="Post">
+		<p>{{form.hidden_tag()}}
+		{{form.email.label}}
+		{{form.email(size=60,placeholder="Email")}}<br><br>
+		{{form.password.label}}
+		{{form.password(size=60,placeholder="password")}}</p><br><br>
+		<p>{{form.submit()}}</p>
+	</form>
+</div>
+	 
+
+</center>
+</body>
+{% endblock %}

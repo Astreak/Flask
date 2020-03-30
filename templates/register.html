@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+{% block content %}
+{% if mode == True %}
+<body bgcolor="black" style="color:red;">
+{% else %}
+<body bgcolor="Lightblue" style="color:red;">
+{% endif %}
+<center>
+	<div style="position: relative;top:200px;">
+	<h1 style="font-family: Roboto"> REGISTER TO OUR ACCOUNT</h1><br><br><hr>
+	<form action="" method="Post" enctype="multipart/form-data">
+		<p>{{form.hidden_tag()}}
+		{{form.username.label}}
+		{{form.username(size=100,placeholder="name")}}<br><br>
+		{{form.email.label}}
+		{{form.email(size=100,placeholder="Email")}}<br><br>
+		{{form.file.label}}
+		{{form.file()}}<br><br>
+		{{form.password.label}}
+		{{form.password(size=100,placeholder="password")}}</p><br><br>
+		<p>{{form.submit()}}</p>
+	</div>
+	 
+{% endblock %}
+
+</center>
+</body>
+</html>

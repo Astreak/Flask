@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block content %}
+{% if mode == True %}
+<body bgcolor="black" >
+{% else %}
+<body bgcolor="Lightblue">
+{% endif %}
+<center>
+	<h1 style="position: relative;top:200px;"> Change Your Password</h1><br><br><hr>
+	<div style="position: relative;top:200px;">
+	<form action="" method="Post">
+		<p>{{form.hidden_tag()}}
+		{{form.pass1.label}}
+		{{form.pass1(size=60,placeholder="New Password")}}<br><br>
+		{{form.pass2.label}}
+		{{form.pass2(size=60,placeholder="Retype-password")}}</p><br><br>
+		<p>{{form.submit()}}</p>
+	</form>
+</div>
+	 
+
+</center>
+{% endblock %}
+</body>
+</html>
