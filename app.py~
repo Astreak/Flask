@@ -183,18 +183,6 @@ def change_password(user=None):
 		return redirect(url_for("login",mode=session.get("mode")))
 	return render_template("change.html",mode=session.get("mode"),form=F,user=user)
 
-@app.route("/api")
-@login_required
-def Api():
-	d=User.query.all()
-	
-	data=[]
-	for i in d:
-		
-		k={"Username":i.username,"Email":i.email,"Password":i.password}
-		data.append(k)
-
-	return jsonify(data)
 
 
 
@@ -257,7 +245,7 @@ def error(error):
 
 
 
-app.run()
+app.run(debug=True)
 
 
 
